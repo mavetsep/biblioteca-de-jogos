@@ -1,0 +1,27 @@
+<mat-card>
+    <h3>Adicionar Novo Jogo</h3>
+    <form (ngSubmit)="adicionarJogo()">
+      <mat-form-field appearance="fill">
+        <mat-label>Título</mat-label>
+        <input matInput [(ngModel)]="titulo" name="titulo" />
+      </mat-form-field>
+  
+      <mat-form-field appearance="fill">
+        <mat-label>Fabricante</mat-label>
+        <input matInput [(ngModel)]="fabricante" name="fabricante" />
+      </mat-form-field>
+  
+      <mat-form-field appearance="fill">
+        <mat-label>Ano de Publicação</mat-label>
+        <input matInput type="number" [(ngModel)]="anoPublicacao" name="anoPublicacao" />
+      </mat-form-field>
+  
+      <mat-form-field appearance="fill">
+        <mat-label>Número de Jogadores</mat-label>
+        <input matInput type="number" [(ngModel)]="numeroJogadores" name="numeroJogadores" />
+      </mat-form-field>
+  
+      <button mat-raised-button color="primary" type="submit">Adicionar</button>
+    </form>
+  </mat-card>
+  

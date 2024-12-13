@@ -1,0 +1,17 @@
+<mat-toolbar color="primary">
+    <span>Biblioteca de Jogos</span>
+  </mat-toolbar>
+  
+  <div class="container">
+    <h2>Jogos Cadastrados</h2>
+    <mat-list>
+      <mat-list-item *ngFor="let jogo of jogos">
+        {{ jogo.titulo }} ({{ jogo.fabricante }})
+        <button mat-raised-button color="primary" (click)="exibirDetalhes(jogo)">Detalhes</button>
+        <button mat-raised-button color="warn" (click)="removerJogo(jogo.titulo)">Remover</button>
+      </mat-list-item>
+    </mat-list>
+  
+    <app-form-jogo></app-form-jogo>
+  </div>
+  

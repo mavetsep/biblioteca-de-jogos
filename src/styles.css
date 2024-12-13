@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+
+
+.container {
+    padding: 20px;
+  }
+  
+  mat-toolbar {
+    margin-bottom: 20px;
+  }
+  
+  mat-card {
+    margin-top: 20px;
+    padding: 20px;
+  }
+  
